@@ -10,6 +10,16 @@
     align-items: center;
 }
 
+.content ul{
+    list-style-type: none;
+    text-align: right;
+}
+  
+.content li{
+    display: inline-block;
+    margin-right: 50px;
+}
+  
 .backToHome{
     margin: 3rem 0 0;
 }

@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
+import Image from 'next/image'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -33,20 +34,54 @@ export default function Home({ allPostsData }) {
 }
       */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
+        <div className={utilStyles.category}>
+          <h2 className={utilStyles.headingLg}>Category</h2>
+          <ul>
+            <li>
+              <a href="">
+                <Image
+                  priority
+                  src="/images/physiology-image.jpg"
+                  height={144}
+                  width={144}
+                />
+                <p>生理学</p>
+              </a> 
             </li>
-          ))}
-        </ul>
+            <li>
+              <a href="">
+                <Image
+                  priority
+                  src="/images/biochemistry-image.jpg"
+                  height={144}
+                  width={144}
+                />
+                <p>生化学</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>医療英語</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className={utilStyles.theLatest}>
+          <h2 className={utilStyles.headingLg}>The Latest</h2>
+          <ul className={utilStyles.list}>
+            {allPostsData.map(({ id, date, title }) => (
+              <li className={utilStyles.listItem} key={id}>
+                <Link href={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+                <br />
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
     </Layout>
   )
