@@ -61,7 +61,7 @@ export default function Home({ allPostsData }) {
             </li>
             <li>
               <a href="">
-                <p>医療英語</p>
+                <p>医学英語</p>
               </a>
             </li>
           </ul>
