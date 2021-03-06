@@ -28,6 +28,16 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
+            <div className={styles.navi}>
+              <ul>
+                <li>
+                  <a className="">HOME</a>
+                  <a className="">BLOG</a>
+                  <a className="">ABOUT</a>
+                </li>
+              </ul>
+            </div>
+
             <Image
               priority
               src="/images/blog-profile.jpg"
