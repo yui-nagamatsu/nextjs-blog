@@ -38,37 +38,46 @@ export default function Home({ allPostsData }) {
           <h2 className={utilStyles.headingLg}>Category</h2>
           <ul>
             <li>
-              <a href="">
-                <Image
-                  priority
-                  src="/images/physiology-image.jpg"
-                  height={200}
-                  width={300}
-                />
-                <p>生理学</p>
-              </a> 
+              <div className={utilStyles.categoryItem}>
+                <a href="">
+                  <Image
+                    priority
+                    className={utilStyles.categoryImage}
+                    src="/images/physiology-image.jpg"
+                    height={200}
+                    width={300}
+                  />
+                  <p>生理学</p>
+                </a> 
+              </div>
             </li>
             <li>
-              <a href="">
-                <Image
-                  priority
-                  src="/images/biochemistry-image.jpg"
-                  height={200}
-                  width={300}
-                />
-                <p>生化学</p>
-              </a>
+              <div className={utilStyles.categoryItem}>
+                <a href="">
+                  <Image
+                    priority
+                    className={utilStyles.categoryImage}
+                    src="/images/biochemistry-image.jpg"
+                    height={200}
+                    width={300}
+                  />
+                  <p>生化学</p>
+                </a>
+              </div>
             </li>
             <li>
-              <a href="">
-              <Image
-                  priority
-                  src="/images/english-image.jpg"
-                  height={200}
-                  width={300}
-                />
-                <p>医学英語</p>
-              </a>
+              <div className={utilStyles.categoryItem}>
+                <a href="">
+                <Image
+                    priority
+                    className={utilStyles.categoryImage}
+                    src="/images/english-image.jpg"
+                    height={200}
+                    width={300}
+                  />
+                  <p>医学英語</p>
+                </a>
+              </div>
             </li>
           </ul>
         </div>
