@@ -43,16 +43,18 @@ export default function Home({ allPostsData }) {
               <ul>
                 <li>
                   <div className={utilStyles.categoryItem}>
-                    <a href="">
-                      <Image
-                        priority
-                        className={utilStyles.categoryImage}
-                        src="/images/physiology-image.jpg"
-                        height={175}
-                        width={260}
-                      />
-                      <p>生理学</p>
-                    </a> 
+                    <Link href="/posts/physiology">
+                      <a>
+                        <Image
+                          priority
+                          className={utilStyles.categoryImage}
+                          src="/images/physiology-image.jpg"
+                          height={175}
+                          width={260}
+                        />
+                        <p>生理学</p>
+                      </a>
+                    </Link> 
                   </div>
                 </li>
                 <li>
@@ -73,16 +75,18 @@ export default function Home({ allPostsData }) {
                 </li>
                 <li>
                   <div className={utilStyles.categoryItem}>
-                    <a href="">
-                    <Image
-                        priority
-                        className={utilStyles.categoryImage}
-                        src="/images/english-image.jpg"
-                        height={175}
-                        width={260}
-                      />
-                      <p>医学英語</p>
-                    </a>
+                  1<Link href="/posts/english">
+                      <a>
+                      <Image
+                          priority
+                          className={utilStyles.categoryImage}
+                          src="/images/english-image.jpg"
+                          height={175}
+                          width={260}
+                        />
+                        <p>医学英語</p>
+                      </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
