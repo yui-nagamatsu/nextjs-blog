@@ -1,7 +1,7 @@
 .container{
-    max-width: 36rem;
     padding: 0 1rem;    
     margin: 3rem auto 6rem;
+    text-align: center;
 }
 
 .header{
@@ -10,9 +10,11 @@
     align-items: center;
 }
 
+
 .logo{
     text-align: center;
-    background-color: blue;
+    background-color: #4160E1;
+    color: white;
     max-width: 100%;
 }
 
