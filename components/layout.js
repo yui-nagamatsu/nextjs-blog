@@ -28,28 +28,22 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <div className={styles.content}>
-              <ul>
-                <li>
-                  <a className="">HOME</a>
-                </li>
-                <li>
-                  <a className="">BLOG</a>
-                </li>
-                <li>
-                  <a className="">ABOUT</a>
-                </li>
-              </ul>
-            </div>
-            <Image
-              priority
-              src="/images/blog-profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+              <div className={styles.wrap}>
+                <div className={styles.logo}>Yui</div>
+                <div className={styles.content}>
+                  <ul>
+                    <li>
+                      <a className="">HOME</a>
+                    </li>
+                    <li>
+                      <a className="">BLOG</a>
+                    </li>
+                    <li>
+                      <a className="">ABOUT</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
           </>
         ) : (
           <>
