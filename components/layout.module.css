@@ -1,21 +1,23 @@
 .container{
+    max-width: 50rem;
     padding: 0 1rem;    
     margin: 3rem auto 6rem;
-    text-align: center;
 }
 
 .header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
 
 .logo{
-    text-align: center;
-    background-color: #4160E1;
-    color: white;
+    text-align: left;
     max-width: 100%;
+}
+.content{
+    text-align: right;
 }
 
 .content ul{

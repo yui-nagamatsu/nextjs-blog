@@ -42,8 +42,8 @@ export default function Home({ allPostsData }) {
                 <Image
                   priority
                   src="/images/physiology-image.jpg"
-                  height={144}
-                  width={144}
+                  height={200}
+                  width={300}
                 />
                 <p>生理学</p>
               </a> 
@@ -53,14 +53,20 @@ export default function Home({ allPostsData }) {
                 <Image
                   priority
                   src="/images/biochemistry-image.jpg"
-                  height={144}
-                  width={144}
+                  height={200}
+                  width={300}
                 />
                 <p>生化学</p>
               </a>
             </li>
             <li>
               <a href="">
+              <Image
+                  priority
+                  src="/images/english-image.jpg"
+                  height={200}
+                  width={300}
+                />
                 <p>医学英語</p>
               </a>
             </li>

@@ -28,21 +28,19 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-              <div className={styles.wrap}>
-                <h1 className={styles.logo}>Yui</h1>
-                <div className={styles.content}>
-                  <ul>
-                    <li>
-                      <a className="">HOME</a>
-                    </li>
-                    <li>
-                      <a className="">BLOG</a>
-                    </li>
-                    <li>
-                      <a className="">ABOUT</a>
-                    </li>
-                  </ul>
-                </div>
+              <h1 className={styles.logo}>Yui</h1>
+              <div className={styles.content}>
+                <ul>
+                  <li>
+                    <a className="">HOME</a>
+                  </li>
+                  <li>
+                    <a className="">BLOG</a>
+                  </li>
+                  <li>
+                    <a className="">ABOUT</a>
+                  </li>
+                </ul>
               </div>
           </>
         ) : (
