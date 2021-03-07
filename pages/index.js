@@ -57,16 +57,18 @@ export default function Home({ allPostsData }) {
                 </li>
                 <li>
                   <div className={utilStyles.categoryItem}>
-                    <a href="">
-                      <Image
-                        priority
-                        className={utilStyles.categoryImage}
-                        src="/images/biochemistry-image.jpg"
-                        height={175}
-                        width={260}
-                      />
-                      <p>生化学</p>
-                    </a>
+                    <Link href="/posts/biochemistry">
+                      <a>
+                        <Image
+                          priority
+                          className={utilStyles.categoryImage}
+                          src="/images/biochemistry-image.jpg"
+                          height={175}
+                          width={260}
+                        />
+                        <p>生化学</p>
+                      </a>
+                    </Link>
                   </div>
                 </li>
                 <li>
