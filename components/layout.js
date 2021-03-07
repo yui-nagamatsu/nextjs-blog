@@ -34,8 +34,13 @@ export default function Layout({ children, home }) {
                   <li>
                     <a className="">HOME</a>
                   </li>
-                  <li>
-                    <a className="">BLOG</a>
+                  <li className={styles.blogMenu}>
+                    <a>BLOG</a>
+                    <ul className={styles.submenu}>
+                      <li><a>生理学</a></li>
+                      <li><a>生化学</a></li>
+                      <li><a>医学英語</a></li>
+                    </ul>
                   </li>
                   <li>
                     <a className="">ABOUT</a>
