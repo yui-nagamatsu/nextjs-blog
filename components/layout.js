@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
               <div className={styles.wrap}>
-                <div className={styles.logo}>Yui</div>
+                <h1 className={styles.logo}>Yui</h1>
                 <div className={styles.content}>
                   <ul>
                     <li>
