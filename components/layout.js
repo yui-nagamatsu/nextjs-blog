@@ -28,11 +28,11 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-              <h1 className={styles.logo}>Yui</h1>
+              <h1 className={styles.logo}>{name}</h1>
               <div className={styles.content}>
                 <ul>
                   <li>
-                    <a className="">HOME</a>
+                    <a className="" href="/">HOME</a>
                   </li>
                   <li className={styles.blogMenu}>
                     <a>BLOG</a>
@@ -50,23 +50,29 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/blog-profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h1 className={styles.logo}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a>{name}</a>
               </Link>
-            </h2>
+            </h1>
+            <div className={styles.content}>
+                <ul>
+                  <li>
+                    <a className="" href="/">HOME</a>
+                  </li>
+                  <li className={styles.blogMenu}>
+                    <a>BLOG</a>
+                    <ul className={styles.submenu}>
+                      <li><a>生理学</a></li>
+                      <li><a>生化学</a></li>
+                      <li><a>医学英語</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a className="">ABOUT</a>
+                  </li>
+                </ul>
+              </div>
           </>
         )}
       </header>

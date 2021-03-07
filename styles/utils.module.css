@@ -14,11 +14,6 @@
   margin: 1rem 0;
 }
 
-.headingLg {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  margin-top: 2rem;
-}
 
 .headingMd {
   font-size: 1.2rem;
@@ -42,10 +37,6 @@
 
 .borderCircle {
   border-radius: 9999px;
-}
-
-.colorInherit {
-  color: inherit;
 }
 
 .padding1px {
