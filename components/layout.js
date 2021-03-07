@@ -38,9 +38,9 @@ export default function Layout({ children, home }) {
                   <li className={styles.blogMenu}>
                     <a>BLOG</a>
                     <ul className={styles.submenu}>
-                      <li><a>生理学</a></li>
-                      <li><a>生化学</a></li>
-                      <li><a>医学英語</a></li>
+                      <li><Link href="/posts/physiology"><a>生理学</a></Link></li>
+                      <li><Link href="/posts/biochemistry"><a>生化学</a></Link></li>
+                      <li><Link href="/posts/english"><a>医学英語</a></Link></li>
                     </ul>
                   </li>
                   <li>
@@ -64,9 +64,9 @@ export default function Layout({ children, home }) {
                   <li className={styles.blogMenu}>
                     <a>BLOG</a>
                     <ul className={styles.submenu}>
-                      <li><a>生理学</a></li>
-                      <li><a>生化学</a></li>
-                      <li><a>医学英語</a></li>
+                      <li><Link href="/posts/physiology"><a>生理学</a></Link></li>
+                      <li><Link href="/posts/biochemistry"><a>生化学</a></Link></li>
+                      <li><Link href="/posts/english"><a>医学英語</a></Link></li>
                     </ul>
                   </li>
                   <li>
