@@ -4,8 +4,7 @@ import Layout from '../../components/layout'
 
 export default function Physiology() {
     return (
-        <div>
-            <Layout home></Layout>
+        <Layout>
             <>
             <h2 className={utilStyles.headingLg}>生化学</h2>
             <p>
@@ -14,6 +13,6 @@ export default function Physiology() {
             </Link>
             </p>
             </>
-        </div>
+        </Layout>
     )
   }
