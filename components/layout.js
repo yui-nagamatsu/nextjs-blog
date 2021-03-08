@@ -85,9 +85,6 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
-      <div className={styles.footer}>
-        <p>© Copyright 2021 Yui All rights reserved.</p>
-      </div>
     </div>
   )
 }
