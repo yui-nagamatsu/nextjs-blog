@@ -75,7 +75,7 @@ export default function Home({ allPostsData }) {
                 </li>
                 <li>
                   <div className={utilStyles.categoryItem}>
-                  1<Link href="/posts/english">
+                  <Link href="/posts/english">
                       <a>
                       <Image
                           priority
