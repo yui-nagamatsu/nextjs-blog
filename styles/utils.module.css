@@ -20,21 +20,6 @@
   line-height: 1.5;
 }
 
-.entire{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.mainCulumn{
-  width: auto;
-  margin-right: 5px;
-}
-
-.asideCulumn{
-  width: 20%;
-  border-color: black;
-}
 
 .borderCircle {
   border-radius: 9999px;

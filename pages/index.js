@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Image from 'next/image'
 
-const name = 'Yui'
+const name = 'yui'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -36,8 +36,6 @@ export default function Home({ allPostsData }) {
 }
       */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <div className={utilStyles.entire}>
-          <div className={utilStyles.mainCulumn}>
             <div className={utilStyles.category}>
               <h2 className={utilStyles.headingLg}>CATEGORY</h2>
               <ul>
@@ -52,7 +50,7 @@ export default function Home({ allPostsData }) {
                           height={175}
                           width={260}
                         />
-                        <p>生理学</p>
+                        <p>PHYSIOLOGY</p>
                       </a>
                     </Link> 
                   </div>
@@ -68,7 +66,7 @@ export default function Home({ allPostsData }) {
                           height={175}
                           width={260}
                         />
-                        <p>生化学</p>
+                        <p>BIOCHEMISTRY</p>
                       </a>
                     </Link>
                   </div>
@@ -84,7 +82,7 @@ export default function Home({ allPostsData }) {
                           height={175}
                           width={260}
                         />
-                        <p>医学英語</p>
+                        <p>MEDICAL ENGLISH</p>
                       </a>
                     </Link>
                   </div>
@@ -107,20 +105,6 @@ export default function Home({ allPostsData }) {
                 ))}
               </ul>
             </div>
-          </div>
-          <div className={utilStyles.asideCulumn}>
-            <h2>Yui</h2>
-            <Image
-              priority
-              src="/images/blog-profile.jpg"
-              className={utilStyles.borderCircle}
-              height={108}
-              width={108}
-              alt={name}
-            />
-            <p>ゆいです</p>
-          </div>
-        </div>
       </section>
     </Layout>
   )

@@ -4,7 +4,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Yui'
+const name = 'yui'
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
@@ -38,11 +38,7 @@ export default function Layout({ children, home }) {
                   </li>
                   <li className={styles.blogMenu}>
                     <a>BLOG</a>
-                    <ul className={styles.submenu}>
-                      <li><Link href="/posts/physiology"><a>生理学</a></Link></li>
-                      <li><Link href="/posts/biochemistry"><a>生化学</a></Link></li>
-                      <li><Link href="/posts/english"><a>医学英語</a></Link></li>
-                    </ul>
+  
                   </li>
                   <li>
                     <a className="">ABOUT</a>
@@ -64,11 +60,7 @@ export default function Layout({ children, home }) {
                   </li>
                   <li className={styles.blogMenu}>
                     <a>BLOG</a>
-                    <ul className={styles.submenu}>
-                      <li><Link href="/posts/physiology"><a>生理学</a></Link></li>
-                      <li><Link href="/posts/biochemistry"><a>生化学</a></Link></li>
-                      <li><Link href="/posts/english"><a>医学英語</a></Link></li>
-                    </ul>
+                    
                   </li>
                   <li>
                     <a className="">ABOUT</a>
