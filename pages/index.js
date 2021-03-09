@@ -20,21 +20,6 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      {/* Keep the existing code here 
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hello I'm Yui.</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-    </Layout>
-  )
-}
-      */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
             <div className={utilStyles.category}>
               <h2 className={utilStyles.headingLg}>CATEGORY</h2>

@@ -21,11 +21,14 @@
 .logo{
     text-align: left;
     max-width: 100%;
+    font-size: 2.5rem;
     margin-left: 3rem;
+    letter-spacing: 1rem;
 }
 
 .content{
     text-align: right;
+    letter-spacing: 0.5rem;
 }
 
 .content a{
@@ -65,14 +68,10 @@ li.blogMenu:hover ul.submenu{
 .backToHome{
     margin: 3rem 0 0;
     text-align: center;
+    letter-spacing: 0.5rem;
 }
 
 .backToHome a{
     text-decoration: none;
 }
 
-
-.footer{
-    text-align: center;
-    font-size: 15px;
-}
