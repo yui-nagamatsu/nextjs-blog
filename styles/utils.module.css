@@ -60,19 +60,6 @@
 .categoryItem{
   box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 2px 3px 0 rgba(0,0,0,.22);
 	transition: .3s;
-}
-
-.categoryItem:hover {
-	box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
-	transform: translateY(-4px);
-}
-
-.categoryItem a{
-  text-decoration: none;
-}
-
-.categoryImage{
-  margin: 5px;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -80,7 +67,9 @@
   filter: grayscale(100%);
 }
 
-.categoryImage:hover{
+.categoryItem:hover {
+	box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-4px);
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
   -ms-filter: grayscale(0);
@@ -88,6 +77,9 @@
   filter: grayscale(0);
 }
 
+.categoryItem a{
+  text-decoration: none;
+}
 
 .categoryItem p{
   text-align: center;
