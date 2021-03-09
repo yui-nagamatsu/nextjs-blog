@@ -81,7 +81,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       <div className={styles.backToHome}>
         <Link href="/">
-          <a><i class="fas fa-home"></i> Back to Home</a>
+          <a><i class="fas fa-home"></i> BACK TO HOME</a>
         </Link>
       </div>
     </div>

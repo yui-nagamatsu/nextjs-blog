@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
         <div className={utilStyles.entire}>
           <div className={utilStyles.mainCulumn}>
             <div className={utilStyles.category}>
-              <h2 className={utilStyles.headingLg}>Category</h2>
+              <h2 className={utilStyles.headingLg}>CATEGORY</h2>
               <ul>
                 <li>
                   <div className={utilStyles.categoryItem}>
@@ -92,7 +92,7 @@ export default function Home({ allPostsData }) {
               </ul>
             </div>
             <div className={utilStyles.theLatest}>
-              <h2 className={utilStyles.headingLg}>The Latest</h2>
+              <h2 className={utilStyles.headingLg}>THE LATEST</h2>
               <ul className={utilStyles.list}>
                 {allPostsData.map(({ id, date, title }) => (
                   <li className={utilStyles.listItem} key={id}>

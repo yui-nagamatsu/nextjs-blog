@@ -2,6 +2,7 @@ html,
 body {
   padding: 0 1rem;    
   margin: 3rem auto 6rem;
+  color: #1a1a1a;
   font-family: "游ゴシック","YuGothic","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   line-height: 1.6;
   font-size: 18px;
@@ -13,13 +14,13 @@ body {
 }
 
 a {
-  color: black;
+  color: #1a1a1a;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 img {
