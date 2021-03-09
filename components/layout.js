@@ -30,52 +30,19 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-              <h1 className={styles.logo}>{name}</h1>
-              <div className={styles.content}>
-                <ul>
-                  <li>
-                    <a className="" href="/">HOME</a>
-                  </li>
-                  <li className={styles.blogMenu}>
-                    <a>BLOG</a>
-  
-                  </li>
-                  <li>
-                    <a className="">ABOUT</a>
-                  </li>
-                </ul>
-              </div>
+          <h1 className={styles.logo}>{name}</h1>
           </>
         ) : (
           <>
-            <h1 className={styles.logo}>
-              <Link href="/">
-                <a>{name}</a>
-              </Link>
-            </h1>
-            <div className={styles.content}>
-                <ul>
-                  <li>
-                    <a className="" href="/">HOME</a>
-                  </li>
-                  <li className={styles.blogMenu}>
-                    <a>BLOG</a>
-                    
-                  </li>
-                  <li>
-                    <a className="">ABOUT</a>
-                  </li>
-                </ul>
-              </div>
+          <h1 className={styles.logo}>
+            <Link href="/">
+              <a>{name}</a>
+            </Link>
+          </h1>
           </>
         )}
       </header>
       <main>{children}</main>
-      <div className={styles.backToHome}>
-        <Link href="/">
-          <a><i class="fas fa-home"></i> BACK TO HOME</a>
-        </Link>
-      </div>
     </div>
   )
 }

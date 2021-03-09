@@ -55,6 +55,11 @@
   filter: grayscale(0);
 }
 
+.categoryItem_a{
+  display: flex;
+  justify-content: space-between;
+}
+
 .categoryImage{
   margin: 15px;
 }
@@ -73,8 +78,40 @@
   list-style-type: none;
 }
 
-.category li{
-  display: inline-block;
-  margin-right: 50px;
+.backToHome{
+  margin: 3rem 0 0;
+  text-align: center;
+  letter-spacing: 0.5rem;
 }
 
+.backToHome a{
+  text-decoration: none;
+}
+
+.backToHome a:hover {
+  opacity: 0.6;
+}
+
+.entire{
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+}
+
+.sideMenu{
+  letter-spacing: 0.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.sideMenu a{
+  text-decoration: none;
+}
+
+.sideMenu ul{
+  list-style-type: none;
+}
+
+.sideMenu li{
+  padding:20px 0;
+}
