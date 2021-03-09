@@ -58,6 +58,11 @@ li.blogMenu:hover ul.submenu{
 
 .backToHome{
     margin: 3rem 0 0;
+    text-align: center;
+}
+
+.backToHome a{
+    text-decoration: none;
 }
 
 .footer{

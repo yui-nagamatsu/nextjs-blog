@@ -7,11 +7,6 @@ export default function English() {
             <Layout>
                 <>
                 <h2 className={utilStyles.headingLg}>生化学</h2>
-                <p>
-                <Link href="/">
-                    <a>Back to home</a>
-                </Link>
-                </p>
                 </>
             </Layout>
     )
