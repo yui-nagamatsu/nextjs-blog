@@ -69,7 +69,7 @@ export default function Home({ allPostsData }) {
                         height={175}
                         width={260}
                       />
-                      <p>MEDICAL ENGLISH</p>
+                      <p>ENGLISH</p>
                     </a>
                   </Link>
                 </div>
