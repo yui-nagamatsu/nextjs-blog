@@ -95,7 +95,11 @@
 .entire{
   display: -webkit-flex;
   display: flex;
-  width: 100%;
+  justify-content: space-between;/*両端揃え*/
+}
+
+.mainColumn{
+  width: 58rem;
 }
 
 .sideMenu{

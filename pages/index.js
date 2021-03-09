@@ -23,6 +23,7 @@ export default function Home({ allPostsData }) {
     <div className={utilStyles.entire}>
       <Layout home>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <div className={utilStyles.mainColumn}>
           <div className={utilStyles.category}>
             <h2 className={utilStyles.headingLg}>CATEGORY</h2>
             <ul>
@@ -97,6 +98,7 @@ export default function Home({ allPostsData }) {
               <a><i class="fas fa-home"></i> BACK TO HOME</a>
             </Link>
           </div>
+        </div>
         </section>
       </Layout>
       <div className={utilStyles.sideMenu}>
