@@ -1,6 +1,7 @@
-.headingMd {
-  font-size: 1.2rem;
+.headingLg {
+  font-size: 1.8rem;
   line-height: 1.5;
+  letter-spacing: 0.9rem;
 }
 
 
@@ -30,19 +31,15 @@
   color: #666;
 }
 
-.category h2, .theLatest h2{
-  letter-spacing: 0.7rem;
-}
-
 .categoryItem{
-  box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 2px 3px 0 rgba(0,0,0,.22);
+  box-shadow: 0 0 1px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.22);
 	transition: .3s;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
-  margin-bottom: 60px;
+  margin-bottom: 1rem;
 }
 
 .categoryItem:hover {
@@ -53,25 +50,38 @@
   -ms-filter: grayscale(0);
   -o-filter: grayscale(0);
   filter: grayscale(0);
+  background-color: black;
 }
 
 .categoryItem_a{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.categoryImage{
-  margin: 15px;
-}
 
 .categoryItem a{
   text-decoration: none;
+  color:black;
 }
 
-.categoryItem p{
-  text-align: center;
-  padding-bottom: 10px;
+.categoryItem a:hover{
+  color: white;
+}
+
+.categoryName p{
   letter-spacing: 0.5rem;
+  text-align: left;
+  margin-left: 5rem;
+}
+
+.categoryNameE{
+  font-size: 1.6rem;
+}
+
+.categoryNameJ{
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .category ul{

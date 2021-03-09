@@ -35,10 +35,13 @@ export default function Home({ allPostsData }) {
                         priority
                         className={utilStyles.categoryImage}
                         src="/images/physiology-image.jpg"
-                        height={175}
-                        width={260}
+                        height={200}
+                        width={300}
                       />
-                      <p>PHYSIOLOGY</p>
+                      <div className={utilStyles.categoryName}>
+                        <p className={utilStyles.categoryNameE}>PHYSIOLOGY</p>
+                        <p className={utilStyles.categoryNameJ}>生理学</p>
+                      </div>
                     </a>
                   </Link> 
                 </div>
@@ -51,10 +54,13 @@ export default function Home({ allPostsData }) {
                         priority
                         className={utilStyles.categoryImage}
                         src="/images/biochemistry-image.jpg"
-                        height={175}
-                        width={260}
+                        height={200}
+                        width={300}
                       />
-                      <p>BIOCHEMISTRY</p>
+                      <div className={utilStyles.categoryName}>
+                        <p className={utilStyles.categoryNameE}>BIOCHEMISTRY</p>
+                        <p className={utilStyles.categoryNameJ}>生化学</p>
+                      </div>
                     </a>
                   </Link>
                 </div>
@@ -67,10 +73,13 @@ export default function Home({ allPostsData }) {
                         priority
                         className={utilStyles.categoryImage}
                         src="/images/english-image.jpg"
-                        height={175}
-                        width={260}
+                        height={200}
+                        width={300}
                       />
-                      <p>ENGLISH</p>
+                      <div className={utilStyles.categoryName}>
+                        <p className={utilStyles.categoryNameE}>ENGLISH</p>
+                        <p className={utilStyles.categoryNameJ}>医学英語</p>
+                      </div>
                     </a>
                   </Link>
                 </div>
