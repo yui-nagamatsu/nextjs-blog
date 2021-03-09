@@ -21,7 +21,9 @@
 .logo{
     text-align: left;
     max-width: 100%;
+    margin-left: 3rem;
 }
+
 .content{
     text-align: right;
 }
@@ -38,7 +40,7 @@
   
 .content li{
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 3rem;
 }
 
 ul.submenu{

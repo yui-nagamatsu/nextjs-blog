@@ -40,7 +40,7 @@
 }
 
 .listItem a:hover{
-  opacity: none;
+  opacity: 0.6;
 }
 
 .lightText {
