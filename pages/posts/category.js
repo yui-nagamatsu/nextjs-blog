@@ -9,6 +9,16 @@ export default function Category() {
             <a>Back to home</a>
           </Link>
         </p>
+        <div className={utilStyles.sideMenu}>
+            <ul>
+                <li>
+                    <a className="" href="/">HOME</a>
+                </li>
+                <li>
+                    <a>CATEGORY</a>          
+                </li>
+            </ul>
+        </div>
       </>
     )
   }

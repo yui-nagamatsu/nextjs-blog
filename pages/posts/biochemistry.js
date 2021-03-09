@@ -4,15 +4,27 @@ import Layout from '../../components/layout'
 
 export default function Biochemistry() {
     return (
-        <div className={utilStyles.biochemistryEntire}>
-            <Layout>
-                <h2 className={utilStyles.headingLg}>BIOCHEMISTRY</h2>
-            </Layout>
-            <div className={utilStyles.backToHome}>
-            <Link href="/">
-            <a><i class="fas fa-home"></i> BACK TO HOME</a>
-            </Link>
+        <div className={utilStyles.entire}>
+            <div className={utilStyles.mainColumn}>
+                <Layout>
+                    <h2 className={utilStyles.headingLg}>BIOCHEMISTRY</h2>
+                </Layout>
+                <div className={utilStyles.backToHome}>
+                <Link href="/">
+                    <a><i class="fas fa-home"></i> BACK TO HOME</a>
+                </Link>
+                </div>
             </div>
-      </div>
+            <div className={utilStyles.sideMenu}>
+                <ul>
+                    <li>
+                        <a className="" href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a className="">CATEGORY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     )
-  }
+}

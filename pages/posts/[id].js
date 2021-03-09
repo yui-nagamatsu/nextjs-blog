@@ -1,23 +1,43 @@
 import Layout from '../../components/layout'
 import Head from 'next/head'
+import Link from 'next/link'
 import { getAllPostIds,getPostData } from '../../lib/posts'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 
 export default function Post({ postData }){
     return (
-        <Layout>
-            <Head>
-                <title>{postData.title}</title>
-            </Head>
-            <article>
-            <h2 className={utilStyles.headingXl}>{postData.title}</h2>
-            <div className={utilStyles.lightText}>
-                <Date dateString={postData. date} />     
+        <div className={utilStyles.entire}>
+            <div className={utilStyles.mainColumn}>
+                <Layout>
+                    <Head>
+                        <title>{postData.title}</title>
+                    </Head>
+                    <article>
+                    <h2 className={utilStyles.headingXl}>{postData.title}</h2>
+                    <div className={utilStyles.lightText}>
+                        <Date dateString={postData. date} />     
+                    </div>
+                    <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
+                    </article>
+                </Layout>
+                <div className={utilStyles.backToHome}>
+                <Link href="/">
+                    <a><i class="fas fa-home"></i> BACK TO HOME</a>
+                </Link>
+                </div>
             </div>
-            <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
-            </article>
-        </Layout>
+            <div className={utilStyles.sideMenu}>
+                <ul>
+                    <li>
+                        <a className="" href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a className="">CATEGORY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     )
 }
 
