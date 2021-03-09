@@ -65,6 +65,7 @@
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
+  margin-bottom: 60px;
 }
 
 .categoryItem:hover {
@@ -75,6 +76,10 @@
   -ms-filter: grayscale(0);
   -o-filter: grayscale(0);
   filter: grayscale(0);
+}
+
+.categoryImage{
+  margin: 15px;
 }
 
 .categoryItem a{
