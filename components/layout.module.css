@@ -1,3 +1,7 @@
+.logo a:hover, .content a:hover, .backToHome a:hover {
+    opacity: 0.6;
+}
+
 .container{
     max-width: 50rem;
     padding: 0 1rem;    
@@ -26,6 +30,7 @@
 .content a{
     text-decoration: none;
 }
+
 
 .content ul{
     list-style-type: none;
@@ -64,6 +69,7 @@ li.blogMenu:hover ul.submenu{
 .backToHome a{
     text-decoration: none;
 }
+
 
 .footer{
     text-align: center;
