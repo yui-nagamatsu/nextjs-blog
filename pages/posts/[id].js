@@ -22,9 +22,9 @@ export default function Post({ postData }){
                     </article>
                 </Layout>
                 <div className={utilStyles.backToHome}>
-                <Link href="/">
-                    <a><i class="fas fa-home"></i> BACK TO HOME</a>
-                </Link>
+                    <a className={utilStyles.backToHome_a} href="/">
+                        <span>BACK TO HOME</span>
+                    </a>
                 </div>
             </div>
             <div className={utilStyles.sideMenu}>
