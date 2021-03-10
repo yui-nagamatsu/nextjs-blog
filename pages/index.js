@@ -92,7 +92,9 @@ export default function Home({ allPostsData }) {
               {allPostsData.map(({ id, date, title }) => (
                 <li className={utilStyles.listItem} key={id}>
                   <Link href={`/posts/${id}`}>
-                    <a>{title}</a>
+                    <a className={utilStyles.listTitle}>
+                      <span>{title}</span>
+                    </a>
                   </Link>
                   <br />
                   <small className={utilStyles.lightText}>
@@ -103,9 +105,9 @@ export default function Home({ allPostsData }) {
             </ul>
           </div>
           <div className={utilStyles.backToHome}>
-            <Link href="/">
-              <a><i class="fas fa-home"></i> BACK TO HOME</a>
-            </Link>
+              <a className={utilStyles.backToHome_a} href="/">
+                <span>BACK TO TOP</span>
+              </a>
           </div>
         </div>
         </section>
