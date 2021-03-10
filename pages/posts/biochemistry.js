@@ -1,13 +1,19 @@
 import Link from 'next/link'
 import utilStyles from '../../styles/utils.module.css'
 import Layout from '../../components/layout'
+import Image from 'next/image'
 
 export default function Biochemistry() {
     return (
         <div className={utilStyles.entire}>
             <div className={utilStyles.mainColumn}>
                 <Layout>
-                    <h2 className={utilStyles.headingLg}>BIOCHEMISTRY</h2>
+                    <Image
+                    priority
+                    className={utilStyles.categoryImage}
+                    src="/images/biochemistry-category-image.jpg"
+                    height={332}
+                    width={700} />
                 </Layout>
                 <div className={utilStyles.backToHome}>
                     <a className={utilStyles.backToHome_a} href="/">
