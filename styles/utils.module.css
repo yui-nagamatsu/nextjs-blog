@@ -119,27 +119,32 @@
 }
 
 .entire{
-  display: -webkit-flex;
   display: flex;
   justify-content: space-between;/*両端揃え*/
 }
 
 .mainColumn{
-  width: 60rem;
+  width: 58rem;
 }
 
 .sideMenu{
   letter-spacing: 0.5rem;
+  text-align: center;
+  margin-top: 10rem;
+  padding-right: 1rem;
 }
 
 .sideMenu ul{
   list-style-type: none;
   position: -webkit-sticky;
   position: sticky;
+  margin: 0;
+  padding: 0;
 }
 
 .sideMenu li{
-  padding:20px 0;
+  text-align: center;
+  padding-bottom: 4rem;
 }
 
 .sideMenu a{
