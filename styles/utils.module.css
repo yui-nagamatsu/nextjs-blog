@@ -33,13 +33,13 @@
 
 .categoryItem{
   box-shadow: 0 0 1px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.22);
-	transition: .3s;
+	transition: .1s;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .categoryItem:hover {
@@ -86,6 +86,7 @@
 
 .category ul{
   list-style-type: none;
+  margin-bottom: 7rem;
 }
 
 .backToHome{
@@ -109,7 +110,7 @@
 }
 
 .mainColumn{
-  width: 58rem;
+  width: 60rem;
 }
 
 .sideMenu{
@@ -170,4 +171,8 @@
 
 .btn span:hover:before{
   width: 100%;
+}
+
+.theLatest{
+  margin-bottom: 7rem;
 }
