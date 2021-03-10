@@ -248,3 +248,49 @@
 .lightText {
   color: #666;
 }
+
+.biochemistryLetter{
+  color: transparent;
+  background-image: url(../public/images/biochemistry-category-image.jpg);
+  background-repeat: none;
+  background-size: 332px 700px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.9rem;
+}
+
+.physiologyLetter{
+  color: transparent;
+  background-image: url(../public/images/physiology-category-image.jpg);
+  background-repeat: none;
+  background-size: 332px 700px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.9rem;
+}
+
+.englishLetter{
+  color: transparent;
+  background-image: url(../public/images/english-category-image.jpg);
+  background-repeat: none;
+  background-size: 332px 700px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.9rem;
+}
+
+.categoryHeader h1{
+  font-weight: 800;
+}

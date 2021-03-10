@@ -8,12 +8,9 @@ export default function Physiology() {
         <div className={utilStyles.entire}>
             <div className={utilStyles.mainColumn}>
                 <Layout>
-                    <Image
-                    priority
-                    className={utilStyles.categoryImage}
-                    src="/images/physiology-category-image.jpg"
-                    height={332}
-                    width={700} />
+                    <span className={utilStyles.categoryHeader}>
+                        <h1 className={utilStyles.physiologyLetter}>PHYSIOLOGY</h1>
+                    </span>
                 </Layout>
                 <div className={utilStyles.backToHome}>
                     <a className={utilStyles.backToHome_a} href="/">

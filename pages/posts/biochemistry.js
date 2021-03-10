@@ -8,12 +8,9 @@ export default function Biochemistry() {
         <div className={utilStyles.entire}>
             <div className={utilStyles.mainColumn}>
                 <Layout>
-                    <Image
-                    priority
-                    className={utilStyles.categoryImage}
-                    src="/images/biochemistry-category-image.jpg"
-                    height={332}
-                    width={700} />
+                    <span className={utilStyles.categoryHeader}>
+                        <h1 className={utilStyles.biochemistryLetter}>BIOCHEMISTRY</h1>
+                    </span>
                 </Layout>
                 <div className={utilStyles.backToHome}>
                     <a className={utilStyles.backToHome_a} href="/">
