@@ -35,9 +35,9 @@ export default function Layout({ children, home }) {
         ) : (
           <>
           <h1 className={styles.logo}>
-            <Link href="/">
-              <a>{name}</a>
-            </Link>
+            <a className={styles.logo_a} href="/">
+              <span>{name}</span>
+            </a>
           </h1>
           </>
         )}
