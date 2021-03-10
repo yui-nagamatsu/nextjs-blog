@@ -30,10 +30,14 @@ export default function Post({ postData }){
             <div className={utilStyles.sideMenu}>
                 <ul>
                     <li>
-                        <a className="" href="/">HOME</a>
+                        <a className={utilStyles.btn} href="/">
+                            <span>HOME</span>
+                        </a>
                     </li>
                     <li>
-                        <a className="">CATEGORY</a>
+                        <a className={utilStyles.btn} href="">
+                            <span>CATEGORY</span>
+                        </a>
                     </li>
                 </ul>
             </div>

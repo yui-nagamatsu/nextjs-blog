@@ -113,13 +113,19 @@ export default function Home({ allPostsData }) {
       <div className={utilStyles.sideMenu}>
         <ul>
           <li>
-            <a className="" href="/">TOP</a>
+            <a className={utilStyles.btn} href="/">
+              <span>TOP</span>
+            </a>
           </li>
           <li>
-            <a>CATEGORY</a>          
+            <a className={utilStyles.btn} href="">
+              <span>CATEGORY</span>
+            </a>          
           </li>
           <li>
-            <a className="">THE LATEST</a>
+            <a className={utilStyles.btn} href="">
+              <span>THE LATEST</span>
+            </a>
           </li>
         </ul>
       </div>

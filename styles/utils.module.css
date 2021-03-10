@@ -116,10 +116,6 @@
   letter-spacing: 0.5rem;
 }
 
-.sideMenu a{
-  text-decoration: none;
-}
-
 .sideMenu ul{
   list-style-type: none;
   position: -webkit-sticky;
@@ -128,4 +124,50 @@
 
 .sideMenu li{
   padding:20px 0;
+}
+
+.sideMenu a{
+  text-decoration: none;
+}
+
+.btn{
+  position: relative;
+  border: 0px solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  text-align: center;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.btn span{
+  width: 100%;
+  height: 100%;
+  color: black;
+  z-index: 10;
+}
+
+.btn span:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: black;
+  z-index: -1;
+  transition: .3s;
+}
+
+.btn span:hover{
+  color: #fff;
+  font-weight: 300;
+}
+
+.btn span:hover:before{
+  width: 100%;
 }
