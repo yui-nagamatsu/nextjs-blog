@@ -76,8 +76,46 @@
   text-decoration: none;
 }
 
-.backToHome a:hover {
-  opacity: 0.6;
+.backToHome_a{
+  position: relative;
+  border: 0px solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  text-align: center;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.backToHome_a span{
+  width: 100%;
+  height: 100%;
+  color: black;
+  z-index: 10;
+}
+
+.backToHome_a span:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: black;
+  z-index: -1;
+  transition: .3s;
+}
+
+.backToHome_a span:hover{
+  color: #fff;
+  font-weight: 300;
+}
+
+.backToHome_a span:hover:before{
+  width: 100%;
 }
 
 .entire{
